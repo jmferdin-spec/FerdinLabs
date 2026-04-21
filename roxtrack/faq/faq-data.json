@@ -152,7 +152,7 @@
       },
       {
         "q": "Can I compare my race results?",
-        "a": "Yes! Visit the <a href=\"https://jmferdin-spec.github.io/roxtrack/compare\" target=\"_blank\">RoxTrack Compare</a> page to compare two races side by side, with per-segment breakdowns showing where you gained or lost time. You can also view detailed results for a single race on the <a href=\"https://jmferdin-spec.github.io/roxtrack/results\" target=\"_blank\">Results</a> page."
+        "a": "Open <strong>History</strong>, select a race, choose <strong>Compare</strong>, and pick another race to view them side by side with per-segment differences. To compare results, both races must use the same setup (for example, same distance and RoxZone settings)."
       }
     ]
   },
