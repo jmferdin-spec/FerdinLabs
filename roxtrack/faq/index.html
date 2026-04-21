@@ -278,7 +278,12 @@
             const section = document.createElement('div');
             section.className = 'mb-10';
             section.innerHTML = `
-              <h2 class="font-condensed font-bold text-sm uppercase text-accent mb-4" style="letter-spacing: 0.15em;">${category.category}</h2>
+              <div class="flex items-center gap-3 mb-6">
+  <div class="rule-accent"></div>
+  <h2 class="font-condensed font-black text-xl md:text-2xl uppercase text-white">
+    ${category.category}
+  </h2>
+</div>
             `;
 
             category.questions.forEach(item => {
