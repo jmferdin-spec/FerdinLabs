@@ -41,7 +41,7 @@
       },
       {
         "q": "What are the Run Mode options?",
-        "a": "Run Mode controls how RoxTrack tracks your running segments. <strong>Outdoor</strong> uses GPS for real distance and pace. <strong>Indoor</strong> disables GPS and estimates distance. <strong>Treadmill</strong> is optimized for treadmill running. <strong>Cardio</strong> is for elliptical or similar machines where distance and pace aren't available — run segments display like stations instead."
+        "a": "Run Mode controls how RoxTrack tracks your running segments. <strong>Outdoor</strong> uses GPS for real distance and pace. <strong>Indoor</strong> disables GPS and estimates distance. <strong>Treadmill</strong> is optimized for treadmill running. <strong>Cardio</strong> uses Garmin’s Cardio activity instead of a run profile, so distance and pace aren’t tracked — run segments display like stations instead."
       },
       {
         "q": "What is the RoxZone setting?",
