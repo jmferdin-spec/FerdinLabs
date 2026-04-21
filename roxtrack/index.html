@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoxTrack — HYROX Training App</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#FF5A1F',
+            dark: '#0A0A0A',
+            darkgray: '#141414',
+          },
+        },
+      },
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: #0A0A0A;
+      color: #FFFFFF;
+    }
+
+    .font-condensed { font-family: 'Barlow Condensed', sans-serif; }
+    .ls-tight { letter-spacing: -0.03em; }
+
+    .rule-accent {
+      width: 48px;
+      height: 3px;
+      background: #FF5A1F;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV (same as main site) -->
+<nav class="fixed top-0 left-0 w-full z-50 border-b border-white/5 bg-black/90 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
+
+    <a href="index.html" style="font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:20px; letter-spacing:0.04em;">
+      <span style="color:#FFFFFF;">Ferdin</span><span style="color:#FF5A1F;">Labs</span>
+    </a>
+
+    <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest text-white/40">
+      <a href="index.html#apps" class="hover:text-white">Apps</a>
+      <a href="index.html#philosophy" class="hover:text-white">Philosophy</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center px-6 pt-20">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="flex items-center gap-4 mb-8">
+      <div class="rule-accent"></div>
+      <span class="text-xs uppercase text-white/40">RoxTrack</span>
+    </div>
+
+    <h1 class="font-condensed font-black uppercase ls-tight leading-none">
+      <span class="block text-[clamp(3rem,10vw,7rem)]">HYROX</span>
+      <span class="block text-[clamp(3rem,10vw,7rem)]">training<span class="text-accent">.</span></span>
+      <span class="block text-[clamp(3rem,10vw,7rem)]">built right<span class="text-accent">.</span></span>
+    </h1>
+
+    <p class="mt-10 max-w-md text-white/40">
+      Structured workouts. Station tracking. Built for real execution — not just logging.
+    </p>
+
+    <div class="mt-10">
+      <a href="#" class="bg-accent text-black px-8 py-4 font-semibold uppercase text-sm">
+        Download on Garmin
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="px-6 py-24 border-t border-white/5">
+
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="font-condensed font-black text-4xl uppercase mb-10">
+      In action
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-white/5 h-80 flex items-center justify-center text-white/20">
+        Screenshot 1
+      </div>
+
+      <div class="bg-white/5 h-80 flex items-center justify-center text-white/20">
+        Screenshot 2
+      </div>
+
+      <div class="bg-white/5 h-80 flex items-center justify-center text-white/20">
+        Screenshot 3
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="px-6 py-24 border-t border-white/5">
+
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="font-condensed font-black text-4xl uppercase mb-12">
+      Built for real training
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+        <h3 class="font-bold mb-2">Structured Workouts</h3>
+        <p class="text-white/40 text-sm">
+          Follow workouts designed for HYROX-style training.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold mb-2">Station Tracking</h3>
+        <p class="text-white/40 text-sm">
+          Track each station and transition clearly.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold mb-2">Race Simulation</h3>
+        <p class="text-white/40 text-sm">
+          Train like you compete. No guesswork.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="px-6 py-24 border-t border-white/5">
+
+  <div class="max-w-4xl mx-auto">
+
+    <h2 class="font-condensed font-black text-4xl uppercase mb-6">
+      Who it's for
+    </h2>
+
+    <p class="text-white/40">
+      Athletes training for HYROX. People who want structure, not distractions.
+      If you're serious about performance, this is built for you.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="px-6 py-24 border-t border-white/5 text-center">
+
+  <h2 class="font-condensed font-black text-4xl uppercase mb-8">
+    Start training<span class="text-accent">.</span>
+  </h2>
+
+  <a href="#" class="bg-accent text-black px-10 py-5 font-semibold uppercase text-sm">
+    Get RoxTrack on Garmin
+  </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="px-6 py-16 border-t border-white/5 text-center text-white/30 text-sm">
+  © 2026 FerdinLabs
+</footer>
+
+</body>
+</html>
