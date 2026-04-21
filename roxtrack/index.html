@@ -43,14 +43,17 @@
       background: #FF5A1F;
     }
 
-    .app-card {
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      transition: border-color 0.2s ease;
-    }
+   .app-card {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.25s ease;
+  transform: translateY(0);
+}
 
-    .app-card:hover {
-      border-color: rgba(255, 90, 31, 0.4);
-    }
+.app-card:hover {
+  border-color: rgba(255, 90, 31, 0.35);
+  transform: translateY(-4px);
+  background: #161616;
+}
 
     @keyframes ticker {
       0% { transform: translateX(0); }
