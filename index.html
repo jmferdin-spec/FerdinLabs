@@ -287,31 +287,45 @@
 </a>
 
         <!-- StoryMiles -->
-        <div class="app-card p-8 md:p-10" style="background: #141414;">
-          <a href="https://storymiles.app" class="block group">
-          <div class="flex items-start justify-between mb-8">
-            <div>
-              <span class="uppercase font-semibold text-accent" style="font-size: 10px; letter-spacing: 0.15em;">03</span>
-              <h3 class="font-condensed font-bold text-3xl md:text-4xl uppercase ls-tight mt-1">StoryMiles</h3>
-            </div>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" style="color: rgba(255,255,255,0.15);">
-              <polyline points="4,28 10,16 18,20 28,6"/>
-              <circle cx="4" cy="28" r="2" fill="currentColor"/>
-              <circle cx="28" cy="6" r="2" fill="currentColor"/>
-            </svg>
-          </div>
-          <p class="text-sm leading-relaxed mb-8" style="color: rgba(255,255,255,0.35);">
-            Turn your Strava stats into shareable Instagram images. Pull your data, pick a layout, export. Your miles, your story, your feed.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Strava</span>
-            <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Stats</span>
-            <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Instagram</span>
-          </div>
-        </div>
-    </a>
+<a href="https://storymiles.app" class="block group">
+  <div class="app-card p-8 md:p-10" style="background: #141414;">
+
+    <div class="flex items-start justify-between mb-8">
+      <div>
+        <span class="uppercase font-semibold text-accent" style="font-size: 10px; letter-spacing: 0.15em;">03</span>
+        <h3 class="font-condensed font-bold text-3xl md:text-4xl uppercase ls-tight mt-1">StoryMiles</h3>
       </div>
+
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"
+           style="color: rgba(255,255,255,0.15);">
+        <polyline points="4,28 10,16 18,20 28,6"/>
+        <circle cx="4" cy="28" r="2" fill="currentColor"/>
+        <circle cx="28" cy="6" r="2" fill="currentColor"/>
+      </svg>
     </div>
+
+    <p class="text-sm leading-relaxed mb-8" style="color: rgba(255,255,255,0.35);">
+      Turn your Strava stats into shareable Instagram images. Pull your data, pick a layout, export. Your miles, your story, your feed.
+    </p>
+
+    <!-- IMAGE PREVIEW -->
+    <div class="relative mb-8 border border-white/5 overflow-hidden">
+      <img src="images/storymiles-preview.png"
+           alt="StoryMiles preview"
+           class="w-full object-cover opacity-90 transition group-hover:scale-[1.02]">
+
+      <!-- subtle fade for readability -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#141414]/80 to-transparent"></div>
+    </div>
+
+    <div class="flex flex-wrap gap-3">
+      <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Stories</span>
+      <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Strava</span>
+      <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Share</span>
+    </div>
+
+  </div>
+</a>
   </section>
 
   <!-- CORE PRINCIPLES -->
