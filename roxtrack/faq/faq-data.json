@@ -20,10 +20,6 @@
     "category": "Settings & Setup",
     "questions": [
       {
-        "q": "Where do I find the settings menu?",
-        "a": "From the main screen, press the menu button (or tap on touchscreen watches) to open the settings menu. From here you can configure all race options before starting your warmup."
-      },
-      {
         "q": "What does Race Distance do?",
         "a": "Race Distance lets you scale the workout to 25%, 50%, 75%, or 100% of a full HYROX race. All station targets and run distances adjust proportionally. This is great for training sessions where you want to practice the format without doing the full distance."
       },
@@ -53,6 +49,10 @@
     "category": "During a Race",
     "questions": [
       {
+        "q": "Does the warmup count toward my race time?",
+        "a": "No. The warmup is a separate phase that runs before the race starts. Your total race time begins when you advance out of the warmup into the first segment. Warmup time is not included in your final results."
+      },
+      {
         "q": "How do I advance to the next segment?",
         "a": "Press the Lap button on your watch to advance to the next segment. RoxTrack uses manual progression only — there's no auto-lap — so you're always in control of when transitions happen."
       },
@@ -78,8 +78,32 @@
         "a": "Yes! As of v4, RoxTrack supports custom workout creation directly on the watch. You can build your own interval structures, give them a custom name, and save them for reuse. Please note that custom workouts are not supported on all devices — older or lower-memory watches may not have this feature available."
       },
       {
+        "q": "What exercises are available for custom workouts?",
+        "a": "You can choose from all the standard HYROX exercises: Run, SkiErg, Sled Push, Sled Pull, Burpee Broad Jumps, Row, Farmers Carry, Walking Lunges, Sandbag Lunges, and Wall Balls. There's also a Rest option you can add between exercises as a timed rest period."
+      },
+      {
+        "q": "How do I set distances, reps, and rest times?",
+        "a": "After selecting an exercise, you'll pick a target value. Most exercises use distance in meters (e.g. 50m–2000m for runs and rows, 5m–200m for sled pushes). Wall Balls use reps (5–200), and Rest uses time (15 seconds up to 5 minutes). Each exercise has its own range and increment size."
+      },
+      {
+        "q": "Can I set a transition time between exercises?",
+        "a": "Yes! During workout creation, you can set a transition time that gets added between each exercise. Options range from 15 seconds to 2 minutes, or you can turn it off entirely. This is great for simulating RoxZone-style transitions in your custom workouts."
+      },
+      {
+        "q": "How do rounds work?",
+        "a": "You can set your workout to repeat for 1 to 10 rounds. Each round repeats the full sequence of exercises you've built. For example, if you create a workout with Run → SkiErg → Sled Push and set it to 3 rounds, you'll cycle through all three exercises three times."
+      },
+      {
+        "q": "Can I edit a workout after creating it?",
+        "a": "Yes, you can fully edit any saved workout. From the review screen you can change targets on individual exercises, delete exercises, add new ones, reorder the exercise sequence, adjust the round count, and change the transition time. You can also rename or delete entire workouts from the workout list."
+      },
+      {
         "q": "Can I name my custom workouts?",
-        "a": "Yes! When creating a custom workout, you can give it a unique name using the on-watch text picker. This makes it easy to identify and select the right workout from your saved list."
+        "a": "Yes! When saving a custom workout, you can give it a custom name using the on-watch text picker. You can also rename workouts later from the workout list. On devices that don't support the text picker, workouts are automatically named (e.g. \"Workout 1\", \"Workout 2\")."
+      },
+      {
+        "q": "Can I reorder exercises in my workout?",
+        "a": "Yes. From the review screen, select Reorder and pick the exercise you want to move. Then use the Up and Down buttons to shift it into the right position and press Start to confirm."
       },
       {
         "q": "Why can't I see the custom workout option on my watch?",
