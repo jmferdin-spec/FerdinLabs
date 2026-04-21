@@ -45,12 +45,16 @@
     }
 
     .app-card {
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      transition: border-color 0.2s ease;
-    }
-    .app-card:hover {
-      border-color: rgba(255, 90, 31, 0.4);
-    }
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.25s ease;
+  transform: translateY(0);
+}
+
+.app-card:hover {
+  border-color: rgba(255, 90, 31, 0.35);
+  transform: translateY(-4px);
+  background: #161616;
+}
 
     @keyframes ticker {
       0% { transform: translateX(0); }
@@ -204,8 +208,8 @@
 
       <div class="grid md:grid-cols-3 gap-4">
         <!-- RoxTrack -->
-        <a href="roxtrack/" class="block">
-  <div class="app-card p-8 md:p-10" style="background: #141414;">
+        <a href="roxtrack/" class="block group">
+  <div class="app-card p-8 md:p-10 group-hover:border-accent/40">
     
     <div class="flex items-start justify-between mb-8">
       <div>
