@@ -51,6 +51,10 @@
         "q": "What does the Touch setting do?",
         "a": "Touch is OFF by default to prevent accidental screen taps during a race. When you turn it ON, tapping the screen works the same as pressing the Lap button to advance to the next segment. This can be useful on touchscreen watches if you prefer tapping over pressing a physical button."
       }
+      {
+        "q": "Are my settings saved if I close the app?",
+        "a": "Yes. All your settings — Race Distance, Run Pace Target, Goal Time, Run Mode, RoxZone, and Touch — are automatically saved every time you change them. They persist through app restarts, discards, and even crashes. You only need to set them once."
+      }
     ]
   },
   {
