@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoxTrack FAQ - HYROX Race Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --surface2: #1c1c1c;
+            --text: #e8e8e8;
+            --muted: #888;
+            --dim: #555;
+            --accent: #f5c518;
+            --border: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .hero {
+            padding: 60px 20px 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 20px 80px;
+        }
+
+        .category {
+            margin-bottom: 36px;
+        }
+
+        .category-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 12px;
+            padding-left: 4px;
+        }
+
+        .faq-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--dim);
+        }
+
+        .faq-item.active {
+            border-color: var(--accent);
+        }
+
+        .faq-question {
+            padding: 18px 22px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            user-select: none;
+            transition: background 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--surface2);
+        }
+
+        .faq-question span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .faq-icon {
+            width: 26px;
+            height: 26px;
+            min-width: 26px;
+            border-radius: 6px;
+            background: var(--surface2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            background: var(--accent);
+        }
+
+        .faq-icon svg {
+            width: 13px;
+            height: 13px;
+            stroke: var(--text);
+            stroke-width: 2.5;
+            fill: none;
+        }
+
+        .faq-item.active .faq-icon svg {
+            stroke: var(--bg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-answer-inner {
+            padding: 0 22px 18px;
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .faq-answer-inner a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .faq-answer-inner a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-answer-inner strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .search-container {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto 32px;
+            padding: 0 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 18px 14px 46px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input::placeholder {
+            color: var(--dim);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 36px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            stroke: var(--dim);
+            fill: none;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--dim);
+            font-size: 1rem;
+            display: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--dim);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.6rem; }
+            .hero { padding: 48px 20px 36px; }
+            .faq-question { padding: 16px 18px; }
+            .faq-answer-inner { padding: 0 18px 16px; }
+        }
+
+        @media print {
+            :root {
+                --bg: #fff;
+                --surface: #f5f5f5;
+                --surface2: #f5f5f5;
+                --text: #111;
+                --muted: #666;
+                --dim: #666;
+                --accent: #b8960f;
+                --border: #ccc;
+            }
+            .search-container { display: none; }
+            .faq-answer { max-height: none !important; }
+            .faq-item { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>RoxTrack FAQ</h1>
+        <p>Everything you need to know about your HYROX race tracker</p>
+    </div>
+
+    <div class="search-container">
+        <svg class="search-icon" viewBox="0 0 24 24" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search questions..." id="searchInput">
+    </div>
+
+    <div class="container" id="faqContainer"></div>
+
+    <div class="no-results" id="noResults">
+        No questions match your search. Try different keywords.
+    </div>
+
+    <div class="footer">
+        <p>Still have questions? Reach out via <a href="mailto:jmferdin@gmail.com">email</a>.</p>
+    </div>
+
+    <script>
+        const plusIcon = `<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>`;
+
+        async function loadFAQ() {
+            try {
+                const response = await fetch('faq-data.json');
+                const data = await response.json();
+                renderFAQ(data);
+            } catch (e) {
+                document.getElementById('faqContainer').innerHTML =
+                    '<p style="text-align:center;color:var(--dim);padding:40px;">Unable to load FAQ data. Please ensure faq-data.json is served from the same location.</p>';
+            }
+        }
+
+        function renderFAQ(data) {
+            const container = document.getElementById('faqContainer');
+            container.innerHTML = '';
+
+            data.forEach(category => {
+                const section = document.createElement('div');
+                section.className = 'category';
+                section.innerHTML = `<h2 class="category-title">${category.category}</h2>`;
+
+                category.questions.forEach(item => {
+                    const faqItem = document.createElement('div');
+                    faqItem.className = 'faq-item';
+                    faqItem.dataset.question = item.q.toLowerCase();
+                    faqItem.dataset.answer = item.a.toLowerCase();
+
+                    faqItem.innerHTML = `
+                        <div class="faq-question">
+                            <span>${item.q}</span>
+                            <div class="faq-icon">${plusIcon}</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">${item.a}</div>
+                        </div>
+                    `;
+
+                    faqItem.querySelector('.faq-question').addEventListener('click', () => {
+                        toggleItem(faqItem);
+                    });
+
+                    section.appendChild(faqItem);
+                });
+
+                container.appendChild(section);
+            });
+        }
+
+        function toggleItem(item) {
+            const isActive = item.classList.contains('active');
+            const answer = item.querySelector('.faq-answer');
+
+            document.querySelectorAll('.faq-item.active').forEach(el => {
+                if (el !== item) {
+                    el.classList.remove('active');
+                    el.querySelector('.faq-answer').style.maxHeight = '0';
+                }
+            });
+
+            if (isActive) {
+                item.classList.remove('active');
+                answer.style.maxHeight = '0';
+            } else {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            const items = document.querySelectorAll('.faq-item');
+            const categories = document.querySelectorAll('.category');
+            let totalVisible = 0;
+
+            items.forEach(item => {
+                const match = !query ||
+                    item.dataset.question.includes(query) ||
+                    item.dataset.answer.includes(query);
+                item.style.display = match ? '' : 'none';
+                if (match) totalVisible++;
+            });
+
+            categories.forEach(cat => {
+                const visibleItems = cat.querySelectorAll('.faq-item:not([style*="display: none"])');
+                cat.style.display = visibleItems.length ? '' : 'none';
+            });
+
+            document.getElementById('noResults').style.display = totalVisible === 0 ? 'block' : 'none';
+        });
+
+        loadFAQ();
+    </script>
+</body>
+</html>
