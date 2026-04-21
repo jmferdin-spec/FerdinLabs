@@ -45,16 +45,12 @@
     }
 
     .app-card {
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: all 0.25s ease;
-  transform: translateY(0);
-}
-
-.app-card:hover {
-  border-color: rgba(255, 90, 31, 0.35);
-  transform: translateY(-4px);
-  background: #161616;
-}
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: border-color 0.2s ease;
+    }
+    .app-card:hover {
+      border-color: rgba(255, 90, 31, 0.4);
+    }
 
     @keyframes ticker {
       0% { transform: translateX(0); }
@@ -114,7 +110,7 @@
   </nav>
 
   <!-- HERO -->
-  <section class="relative min-h-screen flex flex-col justify-center px-6 pt-14">
+  <section class="relative flex flex-col justify-center px-6 pt-14" style="min-height: min(100vh, 800px);">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 select-none pointer-events-none pr-4 md:pr-12">
       <span class="font-condensed font-black leading-none" style="font-size: 20vw; color: rgba(255,255,255,0.02);">01</span>
     </div>
@@ -208,35 +204,29 @@
 
       <div class="grid md:grid-cols-3 gap-4">
         <!-- RoxTrack -->
-        <a href="roxtrack/" class="block group">
-  <div class="app-card p-8 md:p-10 group-hover:border-accent/40">
-    
-    <div class="flex items-start justify-between mb-8">
-      <div>
-        <span class="uppercase font-semibold text-accent" style="font-size: 10px; letter-spacing: 0.15em;">01</span>
-        <h3 class="font-condensed font-bold text-3xl md:text-4xl uppercase ls-tight mt-1">RoxTrack</h3>
-      </div>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" style="color: rgba(255,255,255,0.15);">
-        <circle cx="16" cy="18" r="10"/>
-        <line x1="16" y1="8" x2="16" y2="4"/>
-        <line x1="13" y1="4" x2="19" y2="4"/>
-        <line x1="16" y1="18" x2="16" y2="13"/>
-        <line x1="24" y1="9" x2="26" y2="7"/>
-      </svg>
-    </div>
-
-    <p class="text-sm leading-relaxed mb-8" style="color: rgba(255,255,255,0.35);">
-      HYROX training and race tracking built for execution. Structured workouts. Station tracking. Real effort data.
-    </p>
-
-    <div class="flex flex-wrap gap-3">
-      <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Stations</span>
-      <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Transitions</span>
-      <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Execution</span>
-    </div>
-
-  </div>
-</a>
+        <div class="app-card p-8 md:p-10" style="background: #141414;">
+          <div class="flex items-start justify-between mb-8">
+            <div>
+              <span class="uppercase font-semibold text-accent" style="font-size: 10px; letter-spacing: 0.15em;">01</span>
+              <h3 class="font-condensed font-bold text-3xl md:text-4xl uppercase ls-tight mt-1">RoxTrack</h3>
+            </div>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" style="color: rgba(255,255,255,0.15);">
+              <circle cx="16" cy="18" r="10"/>
+              <line x1="16" y1="8" x2="16" y2="4"/>
+              <line x1="13" y1="4" x2="19" y2="4"/>
+              <line x1="16" y1="18" x2="16" y2="13"/>
+              <line x1="24" y1="9" x2="26" y2="7"/>
+            </svg>
+          </div>
+          <p class="text-sm leading-relaxed mb-8" style="color: rgba(255,255,255,0.35);">
+            HYROX training and race tracking built for execution. Structured workouts. Station tracking. Real effort data.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Rounds</span>
+            <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Intervals</span>
+            <span class="uppercase px-3 py-1" style="font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.08);">Performance</span>
+          </div>
+        </div>
 
         <!-- DekaTrack -->
         <div class="app-card p-8 md:p-10" style="background: #141414;">
