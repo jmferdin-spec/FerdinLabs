@@ -13,6 +13,14 @@
       {
         "q": "Is RoxTrack free?",
         "a": "Yes, RoxTrack is completely free! If you find it useful and want to support ongoing development, you can <a href=\"https://buymeacoffee.com/jmferdin\" target=\"_blank\">buy me a coffee</a>. Donations are always appreciated but never required."
+      },
+      {
+        "q": "What languages does RoxTrack support?",
+        "a": "RoxTrack is available in 10 languages: English, German, French, Italian, Spanish, Portuguese, Dutch, Polish, and Swedish. The app will automatically use your watch's language setting if it's one of these."
+      },
+      {
+        "q": "Can I use RoxTrack for training, not just race day?",
+        "a": "Absolutely. You can scale the standard HYROX race down to 25%, 50%, or 75% using the Race Distance setting, which is perfect for practice sessions. Or use Custom Workouts to build your own training routines with any combination of exercises, distances, and rest periods."
       }
     ]
   },
@@ -48,6 +56,10 @@
   {
     "category": "During a Race",
     "questions": [
+      {
+        "q": "How do I start a race?",
+        "a": "Open RoxTrack on your watch and configure your settings (race distance, run mode, pace target, etc.). Then select Start Warmup. When you're ready to begin, press the Lap button to exit the warmup and start your first running segment. Your race timer begins at that point."
+      },
       {
         "q": "Does the warmup count toward my race time?",
         "a": "No. The warmup is a separate phase that runs before the race starts. Your total race time begins when you advance out of the warmup into the first segment. Warmup time is not included in your final results."
@@ -129,6 +141,10 @@
       {
         "q": "Can I export my race data?",
         "a": "Your race data is saved as a FIT file in Garmin Connect, which you can export and analyze in any compatible platform like Strava, TrainingPeaks, or WKO."
+      },
+      {
+        "q": "Can I compare my race results?",
+        "a": "Yes! Visit the <a href=\"https://jmferdin-spec.github.io/roxtrack/compare\" target=\"_blank\">RoxTrack Compare</a> page to compare two races side by side, with per-segment breakdowns showing where you gained or lost time. You can also view detailed results for a single race on the <a href=\"https://jmferdin-spec.github.io/roxtrack/results\" target=\"_blank\">Results</a> page."
       }
     ]
   },
@@ -138,6 +154,10 @@
       {
         "q": "The app crashed during my race. Is my data lost?",
         "a": "If a crash occurs, any laps already recorded will be saved in the FIT file up to that point. The current in-progress segment may be lost. We recommend ensuring your watch firmware and the app are both up to date."
+      },
+      {
+        "q": "Does RoxTrack drain my battery?",
+        "a": "Battery impact depends on your Run Mode. Outdoor mode uses GPS, which draws the most power — similar to any GPS activity on your watch. Indoor, Treadmill, and Cardio modes don't use GPS and have a much smaller battery impact. For a typical HYROX race (1–2 hours), battery drain should be very manageable on any supported device."
       },
       {
         "q": "My heart rate data looks wrong. What can I do?",
