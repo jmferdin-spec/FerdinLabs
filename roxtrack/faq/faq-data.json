@@ -20,7 +20,7 @@
       },
       {
         "q": "Can I use RoxTrack for training, not just race day?",
-        "a": "Absolutely. You can scale the standard HYROX race down to 25%, 50%, or 75% using the Race Distance setting, which is perfect for practice sessions. Or use Custom Workouts to build your own training routines with any combination of exercises, distances, and rest periods."
+        "a": "Absolutely. You can scale the standard HYROX race down to 25%, 50%, or 75% using the Race Distance setting, which is perfect for practice sessions. Or use Custom Workouts to build your own training routines — including timed intervals for EMOM, Tabata-style, and circuit timer workouts."
       }
     ]
   },
@@ -33,7 +33,7 @@
       },
       {
         "q": "How do I set a Run Pace Target?",
-        "a": "Select Run Pace Target from the settings menu and scroll to choose your target pace, from 3:30/km up to 8:00/km in 5-second increments. During the race, your pace display will be color-coded — green when you're on or ahead of your target, red when you're slower."
+        "a": "Select Run Pace Target from the settings menu. You'll pick a minute value first, then seconds — giving you 1-second precision from 3:30/km up to 8:00/km. During the race, your pace display will be color-coded — green when you're on or ahead of your target, red when you're slower."
       },
       {
         "q": "What does Goal Time do?",
@@ -41,7 +41,7 @@
       },
       {
         "q": "What are the Run Mode options?",
-        "a": "Run Mode controls how RoxTrack tracks your running segments. <strong>Outdoor</strong> uses GPS for real distance and pace. <strong>Indoor</strong> disables GPS and uses the watch’s accelerometer to estimate distance and pace. <strong>Treadmill</strong> is optimized for treadmill running. <strong>Cardio</strong> uses Garmin’s Cardio activity instead of a run profile, so distance and pace aren’t tracked — run segments display like stations instead."
+        "a": "Run Mode controls how RoxTrack tracks your running segments. <strong>Outdoor</strong> uses GPS for real distance and pace. <strong>Indoor</strong> disables GPS and uses the watch's accelerometer to estimate distance and pace. <strong>Treadmill</strong> is optimized for treadmill running. <strong>Cardio</strong> uses Garmin's Cardio activity instead of a run profile, so distance and pace aren't tracked — run segments display like stations instead."
       },
       {
         "q": "What is the RoxZone setting?",
@@ -95,19 +95,35 @@
     "questions": [
       {
         "q": "Can I create custom workouts?",
-        "a": "Yes! As of v4, RoxTrack supports custom workout creation directly on the watch. You can build your own interval structures, give them a custom name, and save them for reuse. Please note that custom workouts are not supported on all devices — older or lower-memory watches may not have this feature available."
+        "a": "Yes! RoxTrack supports custom workout creation directly on the watch. You can build reps/distance-based workouts or timed interval workouts, give them a custom name, and save them for reuse. Please note that custom workouts are not supported on all devices — older or lower-memory watches may not have this feature available."
+      },
+      {
+        "q": "What's the difference between standard and timed workouts?",
+        "a": "In <strong>standard mode</strong>, each exercise has its own distance or rep target and you press Lap to advance when you're done. In <strong>timed mode</strong>, you set a global work time (e.g. 1 minute) and every exercise runs for that duration with a countdown timer that auto-advances to the next segment when time is up. Timed mode is ideal for EMOM, Tabata-style, and circuit timer workouts."
+      },
+      {
+        "q": "How does the countdown timer work in timed workouts?",
+        "a": "During timed workouts, a countdown timer is displayed showing the remaining time for each exercise. When the timer reaches zero, the watch vibrates and automatically advances to the next segment — no need to press any buttons. You can still press Lap early to advance manually if you finish before time is up."
+      },
+      {
+        "q": "What work times can I set for timed workouts?",
+        "a": "Work time ranges from 30 seconds to 10 minutes, in 30-second increments. This time applies to all exercises in the workout — each one gets the same duration per round."
       },
       {
         "q": "What exercises are available for custom workouts?",
-        "a": "You can choose from all the standard HYROX exercises: Run, SkiErg, Sled Push, Sled Pull, Burpee Broad Jumps, Row, Farmers Carry, Walking Lunges, Sandbag Lunges, and Wall Balls. There's also a Rest option you can add between exercises as a timed rest period."
+        "a": "You can choose from all the standard HYROX exercises: Run, SkiErg, Sled Push, Sled Pull, Burpee Broad Jumps, Row, Farmers Carry, Walking Lunges, Sandbag Lunges, and Wall Balls. In standard mode, there's also a Rest option you can add between exercises as a timed rest period."
       },
       {
         "q": "How do I set distances, reps, and rest times?",
-        "a": "After selecting an exercise, you'll pick a target value. Most exercises use distance in meters (e.g. 50m–2000m for runs and rows, 5m–200m for sled pushes). Wall Balls use reps (5–200), and Rest uses time (15 seconds up to 5 minutes). Each exercise has its own range and increment size."
+        "a": "In standard mode, after selecting an exercise you'll pick a target value. Most exercises use distance in meters (e.g. 50m–2000m for runs and rows, 5m–200m for sled pushes). Wall Balls use reps (5–200), and Rest uses time (15 seconds up to 5 minutes). Each exercise has its own range and increment size."
       },
       {
         "q": "Can I set a transition time between exercises?",
-        "a": "Yes! During workout creation, you can set a transition time that gets added between each exercise. Options range from 15 seconds to 2 minutes, or you can turn it off entirely. This is great for simulating RoxZone-style transitions in your custom workouts."
+        "a": "Yes! You can set a transition time that gets added between exercises. Options range from 30 seconds to 5 minutes, or you can turn it off entirely. There's also a <strong>Flexible</strong> option — this adds a transition segment that you advance manually with the Lap button, rather than a fixed countdown. Great for when your rest varies."
+      },
+      {
+        "q": "Can I add rest between rounds?",
+        "a": "Yes — in timed workouts, you can set a Rest After Round time from 30 seconds to 5 minutes. This inserts an auto-advancing rest segment at the end of each round (except the final round), giving you recovery time before the next circuit begins."
       },
       {
         "q": "How do rounds work?",
@@ -118,8 +134,12 @@
         "a": "Yes, you can fully edit any saved workout. From the review screen you can change targets on individual exercises, delete exercises, add new ones, reorder the exercise sequence, adjust the round count, and change the transition time. You can also rename or delete entire workouts from the workout list."
       },
       {
+        "q": "Can I duplicate a workout?",
+        "a": "Yes. From the workout list, select a workout and choose Duplicate. This creates a full copy with all exercises, targets, and settings intact, named with \"Copy\" appended. You can then edit the copy without affecting the original — useful for creating variations of a workout."
+      },
+      {
         "q": "Can I name my custom workouts?",
-        "a": "Yes! When saving a custom workout, you can give it a custom name using the on-watch text picker. You can also rename workouts later from the workout list. On devices that don't support the text picker, workouts are automatically named (e.g. \"Workout 1\", \"Workout 2\")."
+        "a": "Yes! When saving a custom workout, you can give it a custom name using the on-watch text picker. You can also rename workouts later from the workout list. If another workout already has the same name, RoxTrack will automatically add a number to keep names unique. On devices that don't support the text picker, workouts are automatically named (e.g. \"Workout 1\", \"Workout 2\")."
       },
       {
         "q": "Can I reorder exercises in my workout?",
@@ -131,7 +151,7 @@
       },
       {
         "q": "How many custom workouts can I save?",
-        "a": "You can save multiple custom workouts on your device. The exact limit depends on your watch's available storage, but most users can comfortably store 10+ workouts."
+        "a": "You can save up to 10 custom workouts on your device."
       }
     ]
   },
@@ -141,6 +161,10 @@
       {
         "q": "Where can I see my race history?",
         "a": "RoxTrack saves your last 10 races on-device. You can access them from the History menu within the app. Each entry shows your total time and per-segment breakdowns."
+      },
+      {
+        "q": "What does the summary screen show?",
+        "a": "After completing a race or workout, the summary screen shows your overall totals — total time, run time, station time, and RoxZone time. Press Down to scroll into a detailed per-segment breakdown showing the time for every individual segment. Press Up to scroll back to the totals."
       },
       {
         "q": "Does RoxTrack save to Garmin Connect?",
