@@ -48,6 +48,10 @@
         "a": "RoxZone adds transition segments between your runs and stations, just like the actual RoxZone areas in a HYROX race. When ON, these segments are tracked separately so you can see how long your transitions take. Turn it OFF if you want to go directly from station to run without tracking transitions."
       },
       {
+        "q": "What does the Lap Summary setting do?",
+        "a": "Lap Summary shows a quick 6-second overlay after each completed segment with details such as lap time, average heart rate, pace (during runs), and cumulative race time."
+      },
+      {
         "q": "What does the Touch setting do?",
         "a": "Touch is OFF by default to prevent accidental screen taps during a race. When you turn it ON, tapping the screen works the same as pressing the Lap button to advance to the next segment. This can be useful on touchscreen watches if you prefer tapping over pressing a physical button."
       },
@@ -79,6 +83,10 @@
       {
         "q": "What if I press Lap too early?",
         "a": "No worries! Press the Down button to trigger the undo flow, which will reverse you back to the previous segment. Your time and distance are rewound so your data stays accurate."
+      },
+      {
+        "q": "What is the screen that appears after each lap?",
+        "a": "That’s the <strong>Lap Summary</strong> — a quick 6-second overlay designed to give you immediate feedback between segments without interrupting your race flow. It included lap time, average heart rate, pace (during runs), and cumulative race time."
       },
       {
         "q": "What data is shown during running segments?",
