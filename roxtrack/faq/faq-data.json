@@ -119,7 +119,7 @@
       },
       {
         "q": "What exercises are available for custom workouts?",
-        "a": "You can choose from all the standard HYROX exercises: Run, SkiErg, Sled Push, Sled Pull, Burpee Broad Jumps, Row, Farmers Carry, Walking Lunges, Sandbag Lunges, and Wall Balls. In standard mode, there's also a Rest option you can add between exercises as a timed rest period."
+        "a": "You can choose from all the standard HYROX exercises: Run, SkiErg, Sled Push, Sled Pull, Burpee Broad Jumps, Row, Farmers Carry, Lunges, Sandbag Lunges, Wall Balls, Assault Bike, Box Jumps, Deadlifts, Thrusters, Kettle Bells, and Squats. In standard mode, there's also a Rest option you can add between exercises as a timed rest period."
       },
       {
         "q": "How do I set distances, reps, and rest times?",
@@ -160,6 +160,10 @@
       {
         "q": "How many custom workouts can I save?",
         "a": "You can save up to 10 custom workouts on your device."
+      },
+      {
+        "q": "Can I scale a custom workout?",
+        "a": "Yes. For reps- and distance-based custom workouts, RoxTrack will prompt you to choose a workout scale (25%, 50%, 75%, or 100%) before starting. All workout targets are scaled automatically except rest periods. Timed workouts always run at their configured duration and do not show the scale picker."
       }
     ]
   },
@@ -168,7 +172,7 @@
     "questions": [
       {
         "q": "Where can I see my race history?",
-        "a": "RoxTrack saves your last 10 races on-device. You can access them from the History menu within the app. Each entry shows your total time and per-segment breakdowns."
+        "a": "RoxTrack saves your last 20 races on-device. You can access them from the History menu within the app. Each entry shows your total time and per-segment breakdowns."
       },
       {
         "q": "What does the summary screen show?",
@@ -185,6 +189,18 @@
       {
         "q": "Can I compare my race results?",
         "a": "Open <strong>History</strong>, select a race, choose <strong>Compare</strong>, and pick another race to view them side by side with per-segment differences. To compare results, both races must use the same setup (for example, same distance and RoxZone settings)."
+      },
+      {
+        "q": "How do I see my average run pace?",
+        "a": "Your average run pace is displayed on the Results page after completing a race. It is calculated using only your run segments and excludes station and RoxZone time."
+      },
+      {
+        "q": "Can I create an image of my race results for Instagram?",
+        "a": "Yes. On the Results page, tap Share Image to generate a downloadable image with your race statistics. You can choose between: Story (9:16) format for Instagram Stories or Post (1:1) format for Instagram posts. You can also optionally add a race name before generating the image."
+      },
+      {
+        "q": "What information is included in the Instagram share image?",
+        "a": "The share image includes your race statistics, including total time, average heart rate, average run pace, distance, and other key performance metrics from your race."
       }
     ]
   },
